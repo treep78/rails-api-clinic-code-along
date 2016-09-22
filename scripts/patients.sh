@@ -1,6 +1,10 @@
 # index
+curl --include --request GET http://localhost:3000/patients \
+  --header "Content-Type: application/json" \
 
 # show
+curl --include --request GET http://localhost:3000/patients/2 \
+  --header "Content-Type: application/json" \
 
 # create
 curl --include --request POST http://localhost:3000/patients \
@@ -8,7 +12,7 @@ curl --include --request POST http://localhost:3000/patients \
   --data '{
     "patient": {
       "name": "Will",
-      "sickness": "Runs too fast"
+      "sickness": "runs to fast"
     }
   }'
 
