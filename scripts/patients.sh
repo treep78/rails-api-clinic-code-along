@@ -13,7 +13,7 @@ curl --include --request POST http://localhost:3000/patients \
   }'
 
   # update
-  curl --include --request PATCH http://localhost:3000/patients/3 \
+  curl --include --request PATCH http://localhost:3000/patients/7 \
     --header "Content-Type: application/json" \
     --data '{
       "patient": {
@@ -21,3 +21,7 @@ curl --include --request POST http://localhost:3000/patients \
         "sickness": "Runs too fast"
       }
     }'
+
+  # destroy
+  curl --include --request DELETE http://localhost:3000/patients/6 \
+    --header "Content-Type: application/json"
