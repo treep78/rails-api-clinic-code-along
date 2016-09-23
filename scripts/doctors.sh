@@ -18,17 +18,17 @@ curl --include --request POST http://localhost:3000/doctors \
     "doctor": {
       "given_name": "Doctor",
       "surname": "Kevorkian",
-      "specialty": "Putting people out of their misery"
+      "specialty": "Putting people out of their misery",
+      "violetas_request": "OMG! IS THIS GONNA WORK!?"
     }
   }'
 
   # update
-  curl --include --request PATCH http://localhost:3000/doctors/7 \
+  curl --include --request PATCH http://localhost:3000/doctors/5 \
     --header "Content-Type: application/json" \
     --data '{
       "doctor": {
-        "given_name": "Doctor",
-        "surname": "Actula"
+        "specialty": "Drinking blood"
       }
     }'
 
