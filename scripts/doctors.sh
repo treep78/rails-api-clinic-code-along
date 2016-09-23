@@ -6,9 +6,18 @@
 curl --include --request POST http://localhost:3000/doctors \
   --header "Content-Type: application/json" \
   --data '{
-    "patient": {
-      "name": "Will",
-      "sickness": "Runs too fast"
+    "doctor": {
+      "given_name": "Will",
+      "surname": "Doctor Man"
+    }
+  }'
+
+curl --include --request POST http://localhost:3000/doctors \
+  --header "Content-Type: application/json" \
+  --data '{
+    "doctor": {
+      "given_name": "Doctor",
+      "surname": "Kevorkian"
     }
   }'
 
@@ -16,9 +25,9 @@ curl --include --request POST http://localhost:3000/doctors \
   curl --include --request PATCH http://localhost:3000/doctors/7 \
     --header "Content-Type: application/json" \
     --data '{
-      "patient": {
-        "name": "Will McBride",
-        "sickness": "Runs too fast"
+      "doctor": {
+        "given_name": "Doctor",
+        "surname": "Actula"
       }
     }'
 
