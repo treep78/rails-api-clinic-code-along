@@ -17,7 +17,8 @@ curl --include --request POST http://localhost:3000/doctors \
   --data '{
     "doctor": {
       "given_name": "Doctor",
-      "surname": "Kevorkian"
+      "surname": "Kevorkian",
+      "specialty": "Putting people out of their misery"
     }
   }'
 
