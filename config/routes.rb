@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show]
 
   resources :patients, except: [:new, :edit]
-  resources :doctors, only: [:index, :show, :create, :update]
+  resources :doctors, only: [:index, :show, :create, :update, :destroy]
   # same thing ^
   # resources :patients, only: [:index, :show, :create, :update, :destroy]
 
